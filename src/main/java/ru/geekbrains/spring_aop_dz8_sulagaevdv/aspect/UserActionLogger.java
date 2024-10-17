@@ -16,24 +16,23 @@ import java.util.logging.Logger;
 @Component
 public class UserActionLogger {
     private static final Logger logger = Logger.getLogger(UserActionLogger.class.getName());
-    @Before("@annotation(*ru.geekbrains.spring_aop_dz8_sulagaevdv.TrackUserAction)")
+    @Before("@annotation(ru.geekbrains.spring_aop_dz8_sulagaevdv.aspect.TrackUserAction)")
     @Order(1)
     public void beforeLog(JoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         String methodName = signature.getMethod().getName();
         String className = signature.getDeclaringTypeName();
         Object[] args = joinPoint.getArgs();
-
-        logger.info("Method called: " + className + methodName + " with arguments " + Arrays.toString(args));
+        logger.info("Вызван метод " + className + " : " + methodName + " с аргументами: " + Arrays.toString(args));
     }
 
-    @AfterReturning(pointcut = "@annotation(*ru.geekbrains.spring_aop_dz8_sulagaevdv.TrackUserAction)", returning = "result")
+    @AfterReturning(pointcut = "@annotation(ru.geekbrains.spring_aop_dz8_sulagaevdv.aspect.TrackUserAction)", returning = "result")
     @Order(2)
     public void afterLog(JoinPoint joinPoint, Object result) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         String methodName = signature.getMethod().getName();
         String className = signature.getDeclaringTypeName();
 
-        logger.info("Method finished: "+ className + methodName + " with result " + result);
+        logger.info("Метод "+ className + " : " + methodName + " успешно выполнен!");
     }
 }

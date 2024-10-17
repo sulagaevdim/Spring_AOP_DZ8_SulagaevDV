@@ -1,14 +1,12 @@
 package ru.geekbrains.spring_aop_dz8_sulagaevdv.controller;
 
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.spring_aop_dz8_sulagaevdv.aspect.TrackUserAction;
 import ru.geekbrains.spring_aop_dz8_sulagaevdv.model.User;
 import ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserService;
 import java.util.List;
 
-@Controller
+@RestController
 @AllArgsConstructor
 @RequestMapping("/users")
 public class UserController {

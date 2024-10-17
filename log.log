@@ -1,27 +1,87 @@
-2024-10-17T20:36:30.143+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Starting SpringAopDz8SulagaevDvApplication using Java 21.0.2 with PID 23004 (C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV\target\classes started by Дмитрий in C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV)
-2024-10-17T20:36:30.146+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-10-17T20:36:30.739+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-17T20:36:30.785+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
-2024-10-17T20:36:31.228+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-10-17T20:36:31.241+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-17T20:36:31.242+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-17T20:36:31.291+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-17T20:36:31.292+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1095 ms
-2024-10-17T20:36:31.393+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-17T20:36:31.624+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:c657e967-82e2-43e1-a8b4-7f0b34bedd94 user=SA
-2024-10-17T20:36:31.626+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-17T20:36:31.663+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-17T20:36:31.708+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-10-17T20:36:31.735+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-17T20:36:31.980+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-17T20:36:32.678+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-17T20:36:32.709+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-17T20:36:32.933+04:00  WARN 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-17T20:36:33.241+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-10-17T20:36:33.249+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Started SpringAopDz8SulagaevDvApplication in 3.578 seconds (process running for 4.216)
-2024-10-17T20:36:39.472+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-17T20:36:39.473+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-17T20:36:39.474+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-17T20:37:00.113+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-17T20:37:00.117+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-17T20:37:00.118+04:00  INFO 23004 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-17T20:55:28.261+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Starting SpringAopDz8SulagaevDvApplication using Java 21.0.2 with PID 15208 (C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV\target\classes started by Дмитрий in C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV)
+2024-10-17T20:55:28.265+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T20:55:28.880+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17T20:55:28.925+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-10-17T20:55:29.523+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-17T20:55:29.539+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-17T20:55:29.540+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17T20:55:29.589+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-17T20:55:29.589+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1261 ms
+2024-10-17T20:55:29.708+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-17T20:55:29.904+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7c992652-60ae-40e5-9648-86d9c16060a0 user=SA
+2024-10-17T20:55:29.906+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-17T20:55:29.945+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17T20:55:29.993+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17T20:55:30.024+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-17T20:55:30.346+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17T20:55:31.085+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17T20:55:31.116+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:55:31.400+04:00  WARN 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17T20:55:31.772+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-17T20:55:31.780+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Started SpringAopDz8SulagaevDvApplication in 3.925 seconds (process running for 4.578)
+2024-10-17T20:55:39.311+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T20:55:39.312+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T20:55:39.315+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-17T20:55:39.407+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-3] r.g.s.aspect.UserActionLogger            : Method called: ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserServicegetAllUsers with arguments []
+2024-10-17T20:55:39.751+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-3] r.g.s.aspect.UserActionLogger            : Method finished: ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserServicegetAllUsers with result []
+2024-10-17T20:56:14.776+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:56:14.781+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-17T20:56:14.783+04:00  INFO 15208 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-17T20:58:42.498+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Starting SpringAopDz8SulagaevDvApplication using Java 21.0.2 with PID 7024 (C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV\target\classes started by Дмитрий in C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV)
+2024-10-17T20:58:42.501+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T20:58:43.114+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17T20:58:43.162+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-10-17T20:58:43.716+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-17T20:58:43.728+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-17T20:58:43.729+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17T20:58:43.779+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-17T20:58:43.779+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1209 ms
+2024-10-17T20:58:43.911+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-17T20:58:44.101+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b2b5706f-3609-4ecf-9552-81308dd44f04 user=SA
+2024-10-17T20:58:44.103+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-17T20:58:44.139+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17T20:58:44.177+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17T20:58:44.201+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-17T20:58:44.443+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17T20:58:45.204+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17T20:58:45.242+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:58:45.550+04:00  WARN 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17T20:58:45.914+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-17T20:58:45.922+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Started SpringAopDz8SulagaevDvApplication in 3.842 seconds (process running for 4.428)
+2024-10-17T20:58:50.242+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T20:58:50.243+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T20:58:50.244+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-17T20:58:50.279+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] r.g.s.aspect.UserActionLogger            : Вызван метод ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserService : getAllUsers с аргументами: []
+2024-10-17T20:58:50.420+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-1] r.g.s.aspect.UserActionLogger            : Метод ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserService : getAllUsers отработан успешно!
+2024-10-17T20:59:29.339+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:59:29.344+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-17T20:59:29.347+04:00  INFO 7024 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-17T20:59:33.560+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Starting SpringAopDz8SulagaevDvApplication using Java 21.0.2 with PID 8276 (C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV\target\classes started by Дмитрий in C:\GB\Spring\Seminar8\Spring_AOP_DZ8_SulagaevDV)
+2024-10-17T20:59:33.563+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T20:59:34.171+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17T20:59:34.221+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-10-17T20:59:34.783+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-17T20:59:34.797+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-17T20:59:34.797+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17T20:59:34.854+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-17T20:59:34.855+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1226 ms
+2024-10-17T20:59:34.973+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-17T20:59:35.162+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:3bde95fe-470a-4f71-b0e4-afb3f536adf4 user=SA
+2024-10-17T20:59:35.164+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-17T20:59:35.202+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17T20:59:35.241+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17T20:59:35.265+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-17T20:59:35.517+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17T20:59:36.234+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17T20:59:36.265+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:59:36.543+04:00  WARN 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17T20:59:36.949+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-17T20:59:36.957+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [main] r.g.s.SpringAopDz8SulagaevDvApplication  : Started SpringAopDz8SulagaevDvApplication in 3.792 seconds (process running for 4.406)
+2024-10-17T20:59:39.480+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T20:59:39.480+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T20:59:39.481+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-17T20:59:39.517+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-2] r.g.s.aspect.UserActionLogger            : Вызван метод ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserService : getAllUsers с аргументами: []
+2024-10-17T20:59:39.658+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [http-nio-8080-exec-2] r.g.s.aspect.UserActionLogger            : Метод ru.geekbrains.spring_aop_dz8_sulagaevdv.service.UserService : getAllUsers успешно выполнен!
+2024-10-17T20:59:57.613+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T20:59:57.615+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-17T20:59:57.617+04:00  INFO 8276 --- [Spring_AOP_DZ8_SulagaevDV] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
